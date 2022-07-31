@@ -1,0 +1,109 @@
+#generalProductsContainer {
+  width: 100%;
+  display: flex;
+  direction: row;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#products {
+  width: 1024px;
+}
+
+#productsColumns {
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productCard {  
+  width: 180px;
+  height: 400px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 8px rgb(175, 174, 174);
+  position:relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.nonSocioText{
+  font-size: 12px;
+}
+
+.productDiscount{
+  position: absolute;
+  top: 10px;
+  font-weight: 700;
+  right: 10px;
+  background-color: #EE3E80;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgb(175, 174, 174);
+}
+
+.productSocioValue{
+  color: #C81A78;
+}
+
+.productSocioNumber{
+  font-size: 20px;
+  font-weight: 700;
+  color: #C81A78;
+}
+
+.productSocioContainer{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discountNumber{
+  font-size: 18px;
+}
+
+.discountSimbol{
+  font-size: 12px;
+}
+
+.productCard img {
+  height: 40%;
+  margin: 30px;
+}
+
+.productCard p {
+  text-align: center;
+}
+
+.productButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #generalProductsContainer{
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  #products {
+    margin-top: 0;
+  }
+  #productsColumns {
+    display: flex;
+    direction: column;
+    justify-content: space-around;
+  }
+}
